@@ -110,7 +110,7 @@ export default function ValuationForm() {
         setResult(null);
 
         try {
-            const response = await fetch('http://localhost:4000/api/estimate', {
+            const response = await fetch('https://valuai.onrender.com/api/estimate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
