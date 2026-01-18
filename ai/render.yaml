@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: valuai-ai
+    env: python
+    rootDir: ai
+    runtime: python-3.11.9
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app -k uvicorn.workers.UvicornWorker
